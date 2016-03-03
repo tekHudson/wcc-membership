@@ -57,6 +57,12 @@ header * {
     font-size: 50px;
 }
 
+#map-container {
+   display: block;
+   width: 100%;
+   height: 400px;
+}
+
 .plans div.well h2 {
     font-family: 'quentincaps';
     color: #8C2728;

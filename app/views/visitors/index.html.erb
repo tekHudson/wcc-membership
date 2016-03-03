@@ -7,8 +7,8 @@
     <%= link_to 'Download PDF', products_path('product.pdf'), class: 'btn btn-success btn-large' %>
   <% end %>
 <% else %>
-  <div class="welcome row">
-    <div class="well col-sm-12">
+  <div class="row welcome">
+    <div class="col-sm-12">
       <div class="col-sm-10">
         <div id="welcome" class="span7">
           <h1>West Coast Cigars Membership</h1>
@@ -16,6 +16,7 @@
           <h5>Now with the newly sponsered Espinoza Lounge.</h5>
         </div>
       </div>
+
       <div class="col-sm-2">
         <div class="espinoza-logo">
           <%= link_to image_tag(src="espinosa_logo_dark.jpg"), "http://www.westcoastcigars.net/lounge", :target => "_blank" %>
@@ -23,27 +24,33 @@
       </div>
     </div>
   </div>
+
   <div class="row plans">
     <div class="col-sm-12">
       <div class="col-sm-4">
         <div class="well">
           <div><h2>Glass Tube</h2></div>
+
           <ul class="list-unstyled">
             <li>Access to membership pre-event gatherings</li>
             <li>1 Cigar of the month</li>
           </ul>
+
           <h3>$9/mo</h3>
           <%= link_to 'Subscribe', new_user_registration_path(plan: 'glass_tube'), :class => 'btn btn-primary' %>
         </div>
       </div>
+
       <div class="col-sm-4">
         <div class="well featured">
           <div><h2>Herfador</h2></div>
+
           <ul class="list-unstyled">
             <li>Access to the Espinoza lounge</li>
             <li>Access to membership pre-event gatherings</li>
             <li>2 different cigars of the month</li>
           </ul>
+
           <h3>$29/mo</h3>
           <%= link_to 'Subscribe', new_user_registration_path(plan: 'herfador'), :class => 'btn btn-primary' %>
         </div>
@@ -51,6 +58,7 @@
       <div class="col-sm-4">
         <div class="well">
           <div><h2>Humidor</h2></div>
+
           <ul class="list-unstyled">
             <li>Access to the Espinoza lounge</li>
             <li>Access to membership pre-event gatherings</li>
@@ -58,6 +66,7 @@
             <li>10% additional off all purchases</li>
             <li>Option to get personal humidified locker &#x271D;</li>
           </ul>
+
           <h3>$49/mo</h3>
           <%= link_to 'Subscribe', new_user_registration_path(plan: 'humidor'), :class => 'btn btn-primary' %>
         </div>
