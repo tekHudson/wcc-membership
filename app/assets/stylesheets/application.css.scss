@@ -14,16 +14,13 @@
  *= require_self
  */
 
-body {
-    // padding-top: 70px;
-}
-
 main {
-    background-image: image-url("body_background.jpg");
-}
-
-div.welcome {
     padding-top: 20px;
+    background-color: black;
+}
+div.authform form, .well {
+    background-image: image-url("body_background.jpg");
+    border-color: #8C2728;
 }
 
 div.plans .btn, .authform .btn {
@@ -33,6 +30,10 @@ div.plans .btn, .authform .btn {
 
 #welcome h1 {
     color: #b51e1e;
+}
+
+.authform h3 {
+  color: #b51e1e;
 }
 
 header * {
@@ -65,20 +66,15 @@ header * {
     color: #8C2728;
 }
 
-div.well {
-// //     background-color: #777;
-    border-color: #8C2728;
-}
-
 .red-header {
-    color: #8C2728;
+    color: #b51e1e;
 }
 
 .espinoza-logo {
     width: 200px;
     filter: none;
-    -webkit-filter:brightness(50%);
-    -moz-filter:brightness(50%);
+    -webkit-filter:brightness(75%);
+    -moz-filter:brightness(75%);
     filter: url(#brightness); /* required for FF */
-    filter:brightness(50%);
+    filter:brightness(75%);
 }
