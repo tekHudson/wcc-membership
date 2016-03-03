@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get "content/silver"
-  get "content/gold"
-  get "content/platinum"
+  get "content/glass_tube"
+  get "content/herfador"
+  get "content/humidor"
   mount Payola::Engine => '/payola', as: :payola
   root to: 'visitors#index'
   get 'products/:id', to: 'products#show', :as => :products

@@ -8,12 +8,17 @@
   <% end %>
 <% else %>
   <div class="welcome row">
-    <div class="col-sm-12">
-      <div class="well">
+    <div class="well col-sm-12">
+      <div class="col-sm-10">
         <div id="welcome" class="span7">
           <h1>West Coast Cigars Membership</h1>
-          <h3>Join the elite West Coast Club and gain all the perks.</h3>
-          <h5>Now with the new Espinoza Lounge.</h5>
+          <h3>Join the elite with a West Coast Cigars Membership and gain all the perks.</h3>
+          <h5>Now with the newly sponsered Espinoza Lounge.</h5>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="espinoza-logo">
+          <%= link_to image_tag(src="espinosa_logo_dark.jpg"), "http://www.westcoastcigars.net/lounge", :target => "_blank" %>
         </div>
       </div>
     </div>
@@ -28,7 +33,7 @@
             <li>1 Cigar of the month</li>
           </ul>
           <h3>$9/mo</h3>
-          <%= link_to 'Subscribe', new_user_registration_path(plan: 'silver'), :class => 'btn btn-primary' %>
+          <%= link_to 'Subscribe', new_user_registration_path(plan: 'glass_tube'), :class => 'btn btn-primary' %>
         </div>
       </div>
       <div class="col-sm-4">
@@ -40,7 +45,7 @@
             <li>2 different cigars of the month</li>
           </ul>
           <h3>$29/mo</h3>
-          <%= link_to 'Subscribe', new_user_registration_path(plan: 'gold'), :class => 'btn btn-primary' %>
+          <%= link_to 'Subscribe', new_user_registration_path(plan: 'herfador'), :class => 'btn btn-primary' %>
         </div>
       </div>
       <div class="col-sm-4">
@@ -50,12 +55,18 @@
             <li>Access to the Espinoza lounge</li>
             <li>Access to membership pre-event gatherings</li>
             <li>5 different premium hand picked cigars per month</li>
-            <li>Option to get personal humidified locker</li>
             <li>10% additional off all purchases</li>
+            <li>Option to get personal humidified locker &#x271D;</li>
           </ul>
           <h3>$49/mo</h3>
-          <%= link_to 'Subscribe', new_user_registration_path(plan: 'platinum'), :class => 'btn btn-primary' %>
+          <%= link_to 'Subscribe', new_user_registration_path(plan: 'humidor'), :class => 'btn btn-primary' %>
         </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12">
+      <div class="well">
+        &#x271D; Humidified Lockers are available on a first come first serve basis. A waitlist does exsist when there are more interested parties than lockers available. Call and ask our staff for more details as to the current availability.
       </div>
     </div>
   </div>

@@ -1,16 +1,16 @@
 class ContentController < ApplicationController
   before_action :authenticate_user!
 
-  def silver
-    redirect_to root_path, :notice => "Access denied." unless current_user.silver?
+  def glass_tube
+    redirect_to root_path, :notice => "Access denied." unless current_user.glass_tube?
   end
 
-  def gold
-    redirect_to root_path, :notice => "Access denied." unless current_user.gold?
+  def herfador
+    redirect_to root_path, :notice => "Access denied." unless current_user.herfador?
   end
 
-  def platinum
-    redirect_to root_path, :notice => "Access denied." unless current_user.platinum?
+  def humidor
+    redirect_to root_path, :notice => "Access denied." unless current_user.humidor?
   end
 
 end
