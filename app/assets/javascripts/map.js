@@ -18,6 +18,7 @@ function init_map() {
 }
 
 $(document).ready(function(e, data){
-    init_map();
+    if ($("#map-container").length != 0) {
+        init_map();
+    }
 });
-
