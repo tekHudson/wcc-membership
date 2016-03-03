@@ -3,7 +3,7 @@ function init_map() {
 
     var var_mapoptions = {
       center: var_location,
-      zoom: 11
+      zoom: 12
     };
 
     var var_marker = new google.maps.Marker({
