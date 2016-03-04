@@ -1,4 +1,4 @@
-<div class="authform">
+<div class="authform col-xs-6">
   <h3>Edit <%= resource_name.to_s.humanize %></h3>
   <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :role => 'form'}) do |f| %>
     <%= devise_error_messages! %>
@@ -27,21 +27,17 @@
         <%= f.password_field :current_password, class: 'form-control' %>
       </div>
     </fieldset>
-    <%= f.submit 'Update', :class => 'button right' %>
+    <%= f.submit 'Update', :class => 'btn' %>
   <% end %>
 </div>
-<div class="authform">
+<div class="authform col-xs-6">
   <h3>Subscription Plan</h3>
   <%= form_for(resource, :as => resource_name, :url => change_plan_path, :html => { :method => :put, :role  => 'form'}) do |f| %>
     <div class="form-group">
       <%= f.label 'Subscription plan' %>
       <%= f.collection_select(:plan_id, Plan.all, :id, :name) %>
     </div>
-    <%= f.submit 'Change Plan', :class => 'button right' %>
+    <%= f.submit 'Change Plan', :class => 'btn' %>
   <% end %>
-</div>
-<div class="authform">
-  <h3>Cancel Account</h3>
-  <p>Unhappy? We'll be sad to see you go.</p>
-  <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'button right' %>
+  <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, :class => 'btn' %>
 </div>
